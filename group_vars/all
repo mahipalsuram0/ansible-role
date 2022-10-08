@@ -1,4 +1,4 @@
-java_version: 1.8.0
+java_version: 11.0.16
 tomcat_path: "/opt/tomcat"
 tomcat_version: "9.0.68"
 context_path: "{{tomcat_path}}/webapps/manager/META-INF/"
