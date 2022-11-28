@@ -1,7 +1,7 @@
 ---
 - name: Installing Java
   yum:
-    name: java-{{java_version}}-openjdk11-devel
+    name: java-{{java_version}}-openjdk-devel
     state: present
 
 - name: Downloading tomcat
