@@ -1,7 +1,7 @@
 java_version: 11.0.16
 tomcat_path: "/opt/tomcat"
-tomcat_version: "9.0.68"
+tomcat_version: "10.1.2"
 context_path: "{{tomcat_path}}/webapps/manager/META-INF/"
 tomcat_users_path: "{{tomcat_path}}/conf/"
 service_account: ec2-user
-nexusserverip: 54.242.45.155
+nexusserverip: 44.211.242.102
