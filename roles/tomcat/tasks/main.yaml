@@ -1,8 +1,6 @@
 ---
 - name: Installing Java
-  yum:
-    name: java-{{java_version}}-openjdk11-devel
-    state: present
+  command: sudo amazon-linux-extras install java-openjdk11
 
 - name: Downloading tomcat
   get_url:
