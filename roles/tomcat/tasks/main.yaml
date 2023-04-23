@@ -1,10 +1,10 @@
 ---
 - name: Installing Java
-  command: sudo amazon-linux-extras install java-openjdk11
+  command: sudo yum install -y java-11-amazon-corretto-devel
 
 - name: Downloading tomcat
   get_url:
-    url: http://www-eu.apache.org/dist/tomcat/tomcat-10/v{{tomcat_version}}/bin/apache-tomcat-{{tomcat_version}}.tar.gz
+    url: http://dlcdn.apache.org/tomcat/tomcat-10/v{{tomcat_version}}/bin/apache-tomcat-{{tomcat_version}}.tar.gz
     dest: /tmp/tomcat.tar.gz
 
 - name: Creates tomcat folder
